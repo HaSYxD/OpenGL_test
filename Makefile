@@ -1,9 +1,11 @@
 NAME = OpenGL_test
 SRC = src/main.c\
+      src/get_next_line.c\
+      src/get_next_line_utils.c\
       LIB/src/glad.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -std=c99
+CFLAGS = -std=c99
 RM = rm -f
 LIB = -lglfw
 
