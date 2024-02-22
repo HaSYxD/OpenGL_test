@@ -6,6 +6,5 @@ out vec4 screenColor;
 
 void	main()
 {
-	vec3 color = vec3(1.0, 1.0, 1.0);
-	screenColor = vec4(color, 1.0);
+	screenColor = vec4(fragmentColor, 1.0);
 }

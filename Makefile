@@ -1,5 +1,7 @@
 NAME = OpenGL_test
 SRC = src/main.c\
+      src/shader.c\
+      src/triangle_mesh.c\
       src/get_next_line.c\
       src/get_next_line_utils.c\
       LIB/src/glad.c
@@ -7,7 +9,7 @@ OBJ = $(SRC:.c=.o)
 CC = gcc
 CFLAGS = -std=c99
 RM = rm -f
-LIB = -lglfw
+LIB = -lglfw -ldl
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME) $(LIB)
