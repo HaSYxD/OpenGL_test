@@ -6,11 +6,10 @@ TriangleMesh	MakeTriangleMesh(void)
 	
 	mesh.vCount = 6;
 	float	data[24] = {
-		-1.0f, -1.0f ,0.0f, 0.0f, 0.0f, 0.0f,
-		 1.0f, -1.0f ,0.0f, 0.0f, 0.0f, 0.0f,
-		-1.0f,  1.0f ,0.0f, 0.0f, 0.0f, 0.0f,
-		 1.0f,  1.0f ,0.0f, 0.0f, 0.0f, 0.0f
-		
+		-1.0f, -1.0f , 0.0f, 1.0f, 0.0f, 0.0f,
+		 1.0f, -1.0f , 0.0f, 0.0f, 1.0f, 0.0f,
+		-1.0f,  1.0f , 0.0f, 0.0f, 0.0f, 1.0f,
+		 1.0f,  1.0f , 0.0f, 1.0f, 1.0f, 1.0f
 	};
 	
 	int	indicesData[6] = {
